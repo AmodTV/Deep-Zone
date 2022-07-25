@@ -17,11 +17,14 @@
             <option value="">25/5</option>
             <option value="">50/10</option>
         </select>
+        <div>
+            <button onclick="done()">Done</button>
+        </div>
     </div>
 
     <div id="choiceContainer">
-        <Button id="work">Work</Button>
-        <Button id="break">Break</Button>
+        <Button id="work" onclick="workTime()">Work</Button>
+        <Button id="break" onclick="breakTime()">Break</Button>
     </div>
 
     <div id="timer">
@@ -33,6 +36,7 @@
         <button onclick="stop()">Stop</button>
         <button onclick="reset()">Reset</button>
     </div>
+    <audio id="xyz" src="./../Audio/Alarm sound effect (320 kbps).mp3" preload="auto"></audio>
 
     <div id="chooseProduct">
         <button>Pomodoro</button>
@@ -40,7 +44,7 @@
         <button>Flash Cards</button>
         <button>Reminder</button>
     </div>
-    <script src="./../JS/code.js"></script>
+    <script src="./../JS/Code.js"></script>
 </body>
 
 </html>
